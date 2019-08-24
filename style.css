@@ -1,0 +1,183 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+video {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: -1;
+}
+
+nav ul{
+    background-color: none;
+    font-size: 1em;
+	color: white;
+	padding: 10px 0 0 0;
+	margin: 0;
+	text-align: center;
+	overflow: hidden;
+	-webkit-transition: max-height 0.4s;
+	-ms-transition: max-height 0.4s;
+	-moz-transition: max-height 0.4s;
+	-o-transition: max-height 0.4s;
+	transition: max-height 0.4s;
+}
+
+nav ul li{
+	display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+nav ul li:hover{
+	color: gray
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.handle {
+	width: 100%;
+	background-color: none;
+	box-sizing: border-box;
+	padding: 15px;
+	cursor: pointer;
+	color: white;
+	display: none;
+}
+
+p.menu{
+	display: inline-block;
+}
+
+.menu_icon div {
+  background-color: white;
+  border-radius: 2px;
+  width: 35px;
+  height: 5px;
+  margin: 5px;
+}
+
+.menu_icon{
+	float: right;
+	margin: .5em 0;
+}
+
+@media screen and (max-width: 1200px){
+	nav ul{
+		max-height: 0px;
+	}
+	nav ul li{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 15px;
+	}
+	.showing{
+		max-height: 20em; 
+	}
+	.handle{
+		display: block;
+	}
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    padding-top: 100px;
+}
+
+.left-align{
+    padding-right: 180px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.right-align{
+    padding-left: 120px;
+}
+
+.block {
+    display: block;
+}
+
+.padding-top{
+    padding-top: 100px;
+}
+
+.spacing {
+    margin: 10px 0 20px 0;
+}
+
+.btn {
+    border-radius: 24px;
+    text-align: center; 
+    margin: 0 5px 0 5px;
+    padding: 8px 20px; 
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.white-btn {
+    background: white;
+    color: black;
+    padding: 10px 35px; 
+}
+
+.transparent-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.txt-sml {
+    font-size: 0.5em;
+}
+
+#card-one{
+    background-image: url("https://www.tesla.com/content/dam/tesla-site/home-page/images/main-hero-desktop_compressed.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#card-two{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#card-three{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#card-four{
+    background-image: url("https://www.tesla.com/content/dam/tesla-site/wolverine/homepage/blue-hero-desktop.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
